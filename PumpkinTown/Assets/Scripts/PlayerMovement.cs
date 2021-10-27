@@ -10,7 +10,62 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float runSpeed;
 
     private Vector3 moveDirection;
+    private Vector3 velocity;
+
+    [SerializeField] private bool isGrounded;
+    [SerializeField] private float groundCheckDistance;
+    [SerializeField] private LayerMask groundMask;
+    [SerializeField] private float gravity;
     
     //References
     private CharacterController controller;
+
+    private void Start()
+    {
+        controller = GetComponent<CharacterController>();
+    }
+
+    private void Update()
+    {
+        Move();
+    }
+
+    private void Move()
+    {
+        isGrounded = Physics.CheckSphere(transform.position, groundCheckDistance, groundMask);
+        
+        float moveZ = Input.GetAxis("Vertical");
+        moveDirection = new Vector3(0, 0, moveZ);
+        if (moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift))
+        {
+            Walk();
+        }
+        else if (moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift))
+        {
+            Run();
+        }
+        else if (moveDirection == Vector3.zero)
+        {
+            Idle();
+        }
+
+        moveDirection *= moveSpeed;
+
+        controller.Move(moveDirection * Time.deltaTime);
+    }
+
+    private void Idle()
+    {
+        
+    }
+
+    private void Walk()
+    {
+        moveSpeed = walkSpeed;
+    }
+
+    private void Run()
+    {
+        moveSpeed = runSpeed;
+    }
 }

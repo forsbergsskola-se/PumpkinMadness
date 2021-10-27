@@ -5,17 +5,18 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     //Variables
-    [SerializeField] private float moveSpeed;
-    [SerializeField] private float walkSpeed;
-    [SerializeField] private float runSpeed;
+    public float moveSpeed;
+    public float walkSpeed;
+    public float runSpeed;
 
     private Vector3 moveDirection;
     private Vector3 velocity;
 
-    [SerializeField] private bool isGrounded;
-    [SerializeField] private float groundCheckDistance;
-    [SerializeField] private LayerMask groundMask;
-    [SerializeField] private float gravity;
+    public bool isGrounded;
+    public float groundCheckDistance;
+    public LayerMask groundMask;
+    public float gravity;
+    public float jumpHeight;
     
     //References
     private CharacterController controller;
@@ -40,7 +41,9 @@ public class PlayerMovement : MonoBehaviour
         }
         
         float moveZ = Input.GetAxis("Vertical");
-        moveDirection = new Vector3(0, 0, moveZ);
+        float moveX = Input.GetAxis("Horizontal");
+        moveDirection = new Vector3(moveX, 0, moveZ);
+        
 
         if (isGrounded)
         {
@@ -56,10 +59,16 @@ public class PlayerMovement : MonoBehaviour
             {
                 Idle();
             }
+            moveDirection *= moveSpeed;
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Jump();
+            }
 
         }
         
-        moveDirection *= moveSpeed;
+        
 
         controller.Move(moveDirection * Time.deltaTime);
 
@@ -80,5 +89,10 @@ public class PlayerMovement : MonoBehaviour
     private void Run()
     {
         moveSpeed = runSpeed;
+    }
+
+    private void Jump()
+    {
+        velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
     }
 }

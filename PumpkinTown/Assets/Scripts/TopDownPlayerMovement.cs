@@ -1,47 +1,45 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 
 public class TopDownPlayerMovement : MonoBehaviour
 {
     private InputHandler _input;
 
-    public float moveSpeed;
-    public float rotateSpeed;
-    public bool rotateTowardsMouse;
-    public Camera camera;
-    public float jumpSpeed;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float rotateSpeed;
+    [SerializeField] private bool rotateTowardsMouse;
+    [SerializeField] private Camera camera;
+    [SerializeField] LayerMask collisionMask;
+    [SerializeField] float distanceOffset = 0.5f;
+    [SerializeField] private bool isGrounded = false;
+    [SerializeField] private CapsuleCollider collider;
+    [SerializeField] private Rigidbody _rb;
+    [SerializeField] private float jumpForce;
 
-    Rigidbody _rb;
-    bool _canJump;
+   
     
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Floor"))
-        {
-            _canJump = true;
-        }
-    }
-    private void OnCollisionExit(Collision other)
-    {
-        if (other.gameObject.CompareTag("Floor"))
-        {
-            _canJump = false;
-        }
-    }
-
+    
 
     private void Awake()
     {
-        _input = GetComponent<InputHandler>();
         _rb = GetComponent<Rigidbody>();
+        _input = GetComponent<InputHandler>();
     }
     
     
     void Update()
     {
+        RaycastHit hit;
+        float traceDistance = distanceOffset;
+        Debug.Log(traceDistance);
+        isGrounded = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit,
+            traceDistance, collisionMask);
+        
+        
         var targetVector = new Vector3(_input.InputVector.x, 0, _input.InputVector.y);
         
         //Move and rotate in direction we're aiming/travelling
@@ -55,17 +53,23 @@ public class TopDownPlayerMovement : MonoBehaviour
             RotateTowardsMouseVector();
         }
         RotateTowardMovementVector(movementVector);
-        
-        if (Input.GetKeyDown(KeyCode.Space) && _canJump)
+
+        if (Input.GetKeyDown("space"))
         {
             Jump();
         }
+        
+       
     }
+    
 
     private void Jump()
     {
-        _rb.AddForce(0f, jumpSpeed * Time.deltaTime, 0f);
-        //GetComponent<Rigidbody>().AddForce(Vector3.up * 1000);
+        
+        if (isGrounded)
+        {
+            _rb.AddForce(transform.up * jumpForce);
+        }
     }
 
     private void RotateTowardsMouseVector()

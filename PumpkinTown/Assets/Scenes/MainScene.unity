@@ -4254,7 +4254,12 @@ MonoBehaviour:
   rotateSpeed: 15
   rotateTowardsMouse: 1
   camera: {fileID: 1273698945}
-  jumpSpeed: 0
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  distanceOffset: 0.5
+  isGrounded: 0
+  collider: {fileID: 0}
 --- !u!114 &512841064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6213,7 +6218,12 @@ MonoBehaviour:
   rotateSpeed: 15
   rotateTowardsMouse: 1
   camera: {fileID: 1273698945}
-  jumpSpeed: 15
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 64
+  distanceOffset: 0.5
+  isGrounded: 0
+  collider: {fileID: 923772251}
 --- !u!114 &923772248
 MonoBehaviour:
   m_ObjectHideFlags: 0

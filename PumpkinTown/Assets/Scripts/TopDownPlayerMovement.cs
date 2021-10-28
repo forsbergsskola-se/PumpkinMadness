@@ -42,6 +42,7 @@ public class TopDownPlayerMovement : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hitInfo, maxDistance: 300f))
         {
             var target = hitInfo.point;
+            target.y = transform.position.y;
             transform.LookAt(target);
         }
     }

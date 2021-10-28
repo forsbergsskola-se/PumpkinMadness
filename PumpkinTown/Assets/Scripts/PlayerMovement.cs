@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TreeEditor;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -17,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundMask;
     public float gravity;
     public float jumpHeight;
+    public float groundDistance;
     
     //References
     private CharacterController controller;
@@ -33,12 +36,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        isGrounded = Physics.CheckSphere(transform.position, groundCheckDistance, groundMask);
+        RaycastHit hit;
+        isGrounded = Physics.SphereCast(transform.position, groundCheckDistance, transform.up, out hit, groundDistance);
+       
+        Debug.Log(hit.collider);
+        Debug.Log(isGrounded);
 
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
         }
+        
         
         float moveZ = Input.GetAxis("Vertical");
         float moveX = Input.GetAxis("Horizontal");
@@ -74,6 +82,21 @@ public class PlayerMovement : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (isGrounded)
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawSphere(transform.position, groundCheckDistance);
+        }
+        else
+
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawSphere(transform.position, groundCheckDistance);
+        }
     }
 
     private void Idle()

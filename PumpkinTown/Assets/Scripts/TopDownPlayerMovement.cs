@@ -30,6 +30,10 @@ public class TopDownPlayerMovement : MonoBehaviour
 
     private void RotateTowardMovementVector(Vector3 movementVector)
     {
+        if (movementVector.magnitude == 0)
+        {
+            return;
+        }
         var rotation = Quaternion.LookRotation(movementVector);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, rotateSpeed);
     }

@@ -7,10 +7,35 @@ public class TopDownPlayerMovement : MonoBehaviour
 {
     private InputHandler _input;
 
-    [SerializeField] private float moveSpeed;
-    [SerializeField] private float rotateSpeed;
-    [SerializeField] private bool rotateTowardsMouse;
-    [SerializeField] private Camera camera;
+    public float moveSpeed;
+    public float rotateSpeed;
+    public bool rotateTowardsMouse;
+    public Camera camera;
+    public float jumpSpeed;
+
+    Rigidbody _rb;
+    bool _canJump;
+
+    void Start()
+    {
+        _rb = GetComponent<Rigidbody>();
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Floor"))
+        {
+            _canJump = true;
+        }
+    }
+    private void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.CompareTag("Floor"))
+        {
+            _canJump = false;
+        }
+    }
+
 
     private void Awake()
     {
@@ -33,6 +58,16 @@ public class TopDownPlayerMovement : MonoBehaviour
             RotateTowardsMouseVector();
         }
         RotateTowardMovementVector(movementVector);
+        
+        if (Input.GetKey(KeyCode.Space) && _canJump)
+        {
+            Jump();
+        }
+    }
+
+    private void Jump()
+    {
+        _rb.AddForce(0f, jumpSpeed * Time.deltaTime, 0f);
     }
 
     private void RotateTowardsMouseVector()

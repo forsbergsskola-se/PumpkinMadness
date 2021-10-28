@@ -15,11 +15,7 @@ public class TopDownPlayerMovement : MonoBehaviour
 
     Rigidbody _rb;
     bool _canJump;
-
-    void Start()
-    {
-        _rb = GetComponent<Rigidbody>();
-    }
+    
 
     private void OnCollisionEnter(Collision other)
     {
@@ -40,6 +36,7 @@ public class TopDownPlayerMovement : MonoBehaviour
     private void Awake()
     {
         _input = GetComponent<InputHandler>();
+        _rb = GetComponent<Rigidbody>();
     }
     
     
@@ -59,7 +56,7 @@ public class TopDownPlayerMovement : MonoBehaviour
         }
         RotateTowardMovementVector(movementVector);
         
-        if (Input.GetKey(KeyCode.Space) && _canJump)
+        if (Input.GetKeyDown(KeyCode.Space) && _canJump)
         {
             Jump();
         }

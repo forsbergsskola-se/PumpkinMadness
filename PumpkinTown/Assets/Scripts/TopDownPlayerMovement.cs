@@ -9,7 +9,7 @@ public class TopDownPlayerMovement : MonoBehaviour
 
     [SerializeField] private float moveSpeed;
     [SerializeField] private float rotateSpeed;
-
+    [SerializeField] private bool rotateTowardsMouse;
     [SerializeField] private Camera camera;
 
     private void Awake()
@@ -24,8 +24,26 @@ public class TopDownPlayerMovement : MonoBehaviour
         
         //Move and rotate in direction we're aiming/travelling
         var movementVector = MoveTowardTarget(targetVector);
-
+        if (!rotateTowardsMouse)
+        {
+            RotateTowardMovementVector(movementVector);
+        }
+        else
+        {
+            RotateTowardsMouseVector();
+        }
         RotateTowardMovementVector(movementVector);
+    }
+
+    private void RotateTowardsMouseVector()
+    {
+        Ray ray = camera.ScreenPointToRay(_input.Mouseposition);
+
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, maxDistance: 300f))
+        {
+            var target = hitInfo.point;
+            transform.LookAt(target);
+        }
     }
 
     private void RotateTowardMovementVector(Vector3 movementVector)

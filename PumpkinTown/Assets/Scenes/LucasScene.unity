@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 363163646}
   - component: {fileID: 363163645}
   - component: {fileID: 363163650}
+  - component: {fileID: 363163651}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -166,6 +167,7 @@ MonoBehaviour:
     m_Bits: 0
   gravity: 0
   jumpHeight: 0
+  groundDistance: 0
 --- !u!136 &363163646
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -262,6 +264,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &363163651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363163644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2f6105baf914caa853ef8d57c9739a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &768480973
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,18 +374,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3251472057057306335, guid: 5153c4d475fb64b388c037a8a7271cb7, type: 3}
   m_PrefabInstance: {fileID: 1428663439}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &790482343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790482342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 754260d7ec68f4385a9a20ee30ebe08a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &790482345
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -965,6 +967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pumpkin
       objectReference: {fileID: 0}
+    - target: {fileID: 3251472057057306335, guid: 5153c4d475fb64b388c037a8a7271cb7, type: 3}
+      propertyPath: m_TagString
+      value: Pumpkin
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5153c4d475fb64b388c037a8a7271cb7, type: 3}
 --- !u!1 &1655649268
@@ -1049,7 +1055,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-80080
+  m_Name: pb_Mesh25410
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

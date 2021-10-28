@@ -65,6 +65,7 @@ public class TopDownPlayerMovement : MonoBehaviour
     private void Jump()
     {
         _rb.AddForce(0f, jumpSpeed * Time.deltaTime, 0f);
+        //GetComponent<Rigidbody>().AddForce(Vector3.up * 1000);
     }
 
     private void RotateTowardsMouseVector()

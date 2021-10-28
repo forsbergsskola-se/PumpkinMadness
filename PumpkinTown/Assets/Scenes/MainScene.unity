@@ -1244,7 +1244,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &114888307
 Mesh:
@@ -2239,7 +2239,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3530562b980142d499d3502f83b7b039, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3530562b980142d499d3502f83b7b039, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3133,7 +3133,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &335104409
 Mesh:
@@ -4220,7 +4220,7 @@ Transform:
   - {fileID: 295056999}
   - {fileID: 918053818}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &512841062
 Rigidbody:
@@ -6213,7 +6213,7 @@ MonoBehaviour:
   rotateSpeed: 15
   rotateTowardsMouse: 1
   camera: {fileID: 1273698945}
-  jumpSpeed: 5
+  jumpSpeed: 15
 --- !u!114 &923772248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7498,7 +7498,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1043414420
 Mesh:
@@ -9217,7 +9217,7 @@ PrefabInstance:
       objectReference: {fileID: 1672269950}
     - target: {fileID: 6515005368581294574, guid: 316e0bfc1b2804b5cb9800e1811daeba, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6515005368581294574, guid: 316e0bfc1b2804b5cb9800e1811daeba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10074,7 +10074,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2761933863930444901, guid: 5153c4d475fb64b388c037a8a7271cb7, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2761933863930444901, guid: 5153c4d475fb64b388c037a8a7271cb7, type: 3}
       propertyPath: m_LocalScale.x
@@ -10130,6 +10130,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3251472057057306335, guid: 5153c4d475fb64b388c037a8a7271cb7, type: 3}
       propertyPath: m_Name
+      value: Pumpkin
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251472057057306335, guid: 5153c4d475fb64b388c037a8a7271cb7, type: 3}
+      propertyPath: m_TagString
       value: Pumpkin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10639,7 +10643,7 @@ RectTransform:
   - {fileID: 2123344142}
   - {fileID: 2126394611}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11393,7 +11397,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!43 &1663476584
 Mesh:
@@ -11802,9 +11806,13 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8714636485281323107, guid: 039bf1260bef745f8aea4e64704fae74, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 8714636485281323108, guid: 039bf1260bef745f8aea4e64704fae74, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8714636485281323108, guid: 039bf1260bef745f8aea4e64704fae74, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11942,7 +11950,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!43 &1780810186
 Mesh:
@@ -13351,7 +13359,7 @@ GameObject:
   - component: {fileID: 2111403227}
   m_Layer: 6
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13432,7 +13440,7 @@ Transform:
   m_LocalScale: {x: 6.116592, y: 1, z: 5.3266687}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &2111403227
 Rigidbody:

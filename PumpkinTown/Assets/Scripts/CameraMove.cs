@@ -10,10 +10,10 @@ public class CameraMove : MonoBehaviour
         {
             GameObject.Find("MainCamera").transform.position = transform.position + new Vector3(3, 15, -5);
             GameObject.Find("FenceClose").transform.position = transform.position + new Vector3(1, -1, 0);
-            GameObject.Find("EnemyCollider2").transform.position = transform.position + new Vector3(-5, 0, 0);
-            GameObject.Find("EnemyCollider3").transform.position = transform.position + new Vector3(-5, 0, 0);
-            GameObject.Find("EnemyCollider4").transform.position = transform.position + new Vector3(-5, 0, 0);
-            GameObject.Find("EnemyCollider5").transform.position = transform.position + new Vector3(-5, 0, 0);
+            GameObject.Find("EnemyCollider2").transform.position = transform.position + new Vector3(-50, 0, 0);
+            GameObject.Find("EnemyCollider3").transform.position = transform.position + new Vector3(-50, 0, 0);
+            GameObject.Find("EnemyCollider4").transform.position = transform.position + new Vector3(-50, 0, 0);
+            GameObject.Find("EnemyCollider5").transform.position = transform.position + new Vector3(-50, 0, 0);
         }        
     }
 }

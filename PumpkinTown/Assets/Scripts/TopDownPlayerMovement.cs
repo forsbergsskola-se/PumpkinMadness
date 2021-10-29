@@ -31,7 +31,7 @@ public class TopDownPlayerMovement : MonoBehaviour
     }
     
     
-    void Update()
+    void FixedUpdate()
     {
         RaycastHit hit;
         float traceDistance = distanceOffset;
@@ -57,6 +57,11 @@ public class TopDownPlayerMovement : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             Jump();
+        }
+
+        if (_rb.position.y < -2)
+        {
+            FindObjectOfType<GameManager>().GameOver();
         }
         
        

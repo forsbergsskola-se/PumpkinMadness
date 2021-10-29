@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
    public static GameManager Instance;
    public float restartDelay = 2f;
    public GameState State;
+
+   [SerializeField] GameObject _gameOver;
    public static event Action<GameState> OneGameStateChanged; 
 
    private bool gameHasEnded = false;
@@ -20,6 +22,7 @@ public class GameManager : MonoBehaviour
 
    private void Start()
    {
+      _gameOver.SetActive(false);
       UpdateGameState(GameState.StartGame);
    }
 
@@ -30,6 +33,7 @@ public class GameManager : MonoBehaviour
       switch (newState)
       {
          case GameState.StartGame:
+            _gameOver.SetActive(false);
             HandleGameStart();
             break;
          case GameState.Play:
@@ -56,6 +60,7 @@ public class GameManager : MonoBehaviour
       {
          gameHasEnded = true;
          Debug.Log("GAME OVER");
+         _gameOver.SetActive(true);
          Invoke("Restart", restartDelay);
       }
       

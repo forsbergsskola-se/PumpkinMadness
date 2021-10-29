@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         }
 
-        if (_rb.position.y < -2)
+        if (_rb.position.y < -15)
         {
             FindObjectOfType<GameManager>().GameOver();
         }

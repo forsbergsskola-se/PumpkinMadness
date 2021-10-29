@@ -29,7 +29,11 @@ public class EnemyScript : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
+        {
             Destroy(GameObject.Find("Player"));
+            FindObjectOfType<GameManager>().GameOver();
+        }
+
         //animator.SetBool("isWalking", false);
     }
 }

@@ -8,17 +8,7 @@ public class MenuManager : MonoBehaviour
 {
     [SerializeField] private GameObject GameStartPanel, _exitButton;
     [SerializeField] private TextMeshProUGUI _stateText;
-
-    private void Awake()
-    {
-        GameManager.OneGameStateChanged += GameManagerOnGameStateChanged;
-    }
-
-    private void OnDestroy()
-    {
-        GameManager.OneGameStateChanged -= GameManagerOnGameStateChanged;
-    }
-
+    private GameManager _gameManager;
     private void GameManagerOnGameStateChanged(GameState state)
     {
         GameStartPanel.SetActive(state == GameState.StartGame);
@@ -26,7 +16,7 @@ public class MenuManager : MonoBehaviour
 
     void Start()
     {
-        
+        _gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
     }
 
    

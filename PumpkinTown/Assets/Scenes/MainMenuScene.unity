@@ -261,6 +261,14 @@ PrefabInstance:
       propertyPath: _gameOver
       value: 
       objectReference: {fileID: 3007330069001236498, guid: 9c4dd9fc9556c7e48a3385083eef89b4, type: 3}
+    - target: {fileID: 1036010813787718878, guid: 1d8e14c5daa93b14ba38ad1c5d76f7e8, type: 3}
+      propertyPath: restartDelay
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036010813787718878, guid: 1d8e14c5daa93b14ba38ad1c5d76f7e8, type: 3}
+      propertyPath: _gameOverSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ee72b3806b1934299a9bc9c612cfff4a, type: 3}
     - target: {fileID: 1036010813787718879, guid: 1d8e14c5daa93b14ba38ad1c5d76f7e8, type: 3}
       propertyPath: m_Name
       value: GameManager

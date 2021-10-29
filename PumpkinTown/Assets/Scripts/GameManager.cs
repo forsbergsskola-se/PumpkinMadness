@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
    public static GameManager Instance;
-   public float restartDelay = 2f;
+   public float restartDelay = 4f;
    public GameState State;
 
    [SerializeField] GameObject _gameOver;

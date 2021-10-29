@@ -24,6 +24,6 @@ public class EnemyScript : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
-            Destroy(GameObject.Find("Elias-Player"));
+            Destroy(GameObject.Find("Player"));
     }
 }

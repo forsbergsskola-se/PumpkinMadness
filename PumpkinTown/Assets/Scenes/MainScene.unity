@@ -18384,7 +18384,7 @@ PrefabInstance:
       objectReference: {fileID: 1273698945}
     - target: {fileID: 7401041062645396145, guid: d992281345ed3d743a99a5636ee90a5d, type: 3}
       propertyPath: m_Name
-      value: Armature
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7925797746500347915, guid: d992281345ed3d743a99a5636ee90a5d, type: 3}
       propertyPath: m_RootOrder
@@ -18788,6 +18788,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8439468011255218129, guid: 8daedb28f10a500478cb216593f8cce5, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2140732289}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8daedb28f10a500478cb216593f8cce5, type: 3}
 --- !u!1 &8701632239540667973

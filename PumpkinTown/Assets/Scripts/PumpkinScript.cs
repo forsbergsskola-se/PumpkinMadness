@@ -6,6 +6,7 @@ public class PumpkinScript : MonoBehaviour
 {
     bool inside = false;
     bool startTime = false;
+    int pumpkinScore;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -25,6 +26,7 @@ public class PumpkinScript : MonoBehaviour
             IEnumerator pumpkinTimer()
             {                
                 yield return new WaitForSeconds(3);
+                pumpkinScore++;
                 Destroy(gameObject);
             }
         }

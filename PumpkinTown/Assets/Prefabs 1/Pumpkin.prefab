@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754260d7ec68f4385a9a20ee30ebe08a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pumpkinSmashSound: {fileID: 0}
+  _pumpkinSmashSound: {fileID: 8300000, guid: 3d73ceaee079341259441bc40b1bbe32, type: 3}
   scoreValue: 0
 --- !u!1 &5410643249850584845
 GameObject:

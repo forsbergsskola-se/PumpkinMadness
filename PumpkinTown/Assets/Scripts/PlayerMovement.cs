@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private CapsuleCollider collider;
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private float jumpForce;
+    [SerializeField] private AudioClip _playerMoveSound;
 
    
     
@@ -47,6 +48,8 @@ public class PlayerMovement : MonoBehaviour
         if (!rotateTowardsMouse)
         {
             RotateTowardMovementVector(movementVector);
+            GameObject Audio = GameObject.FindGameObjectWithTag("Audio");
+            Audio.GetComponent<AudioManager>().PlayAudio(_playerMoveSound, false);
         }
         else
         {

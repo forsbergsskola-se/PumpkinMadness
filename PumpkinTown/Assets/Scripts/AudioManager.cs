@@ -5,16 +5,14 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
+    [SerializeField] private GameObject AudioPrefab;
     
-   
-    void Start()
-    {
-        
-    }
+    
 
-   
-    void Update()
+    public void PlayAudio(AudioClip Audio, bool isLooping)
     {
-        
+        GameObject audioClip = Instantiate(AudioPrefab, transform);
+        audioClip.transform.SetParent(transform);  
+        audioClip.GetComponent<AudioPlay>().PlayAudio(Audio, isLooping);
     }
 }

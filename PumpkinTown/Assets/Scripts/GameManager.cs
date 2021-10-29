@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
    public GameState State;
 
    [SerializeField] GameObject _gameOver;
+   [SerializeField] private AudioClip _gameOverSound;
    public static event Action<GameState> OneGameStateChanged; 
 
    private bool gameHasEnded = false;
@@ -61,6 +62,8 @@ public class GameManager : MonoBehaviour
    {
       if (gameHasEnded == false)
       {
+         GameObject Audio = GameObject.FindGameObjectWithTag("Audio");
+         Audio.GetComponent<AudioManager>().PlayAudio(_gameOverSound, false);
          gameHasEnded = true;
          Debug.Log("GAME OVER");
          _gameOver.SetActive(true);

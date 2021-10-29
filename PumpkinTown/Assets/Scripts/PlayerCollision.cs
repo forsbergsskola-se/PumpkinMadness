@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    public TopDownPlayerMovement movement;
+    public PlayerMovement movement;
 
 
     private void OnCollisionEnter(Collision collisionInfo)

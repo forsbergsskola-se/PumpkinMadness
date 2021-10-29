@@ -25,7 +25,7 @@ public class PumpkinScript : MonoBehaviour
             StartCoroutine(pumpkinTimer());
             IEnumerator pumpkinTimer()
             {                
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(3);
                 ScoreScript.scoreValue = scoreValue + 1;                
                 Destroy(gameObject);
             }

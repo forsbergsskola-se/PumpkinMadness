@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
    public static GameManager Instance;
    public float restartDelay = 2f;
    public GameState State;
+
+   [SerializeField] GameObject _gameOver;
+   [SerializeField] private AudioClip _gameOverSound;
    public static event Action<GameState> OneGameStateChanged; 
 
    private bool gameHasEnded = false;
@@ -16,10 +19,12 @@ public class GameManager : MonoBehaviour
    private void Awake()
    {
       Instance = this;
+      DontDestroyOnLoad(this.gameObject);
    }
 
    private void Start()
    {
+      _gameOver.SetActive(false);
       UpdateGameState(GameState.StartGame);
    }
 
@@ -29,7 +34,10 @@ public class GameManager : MonoBehaviour
 
       switch (newState)
       {
+         case GameState.MainMenu:
+            break;
          case GameState.StartGame:
+            _gameOver.SetActive(false);
             HandleGameStart();
             break;
          case GameState.Play:
@@ -54,8 +62,11 @@ public class GameManager : MonoBehaviour
    {
       if (gameHasEnded == false)
       {
+         GameObject Audio = GameObject.FindGameObjectWithTag("Audio");
+         Audio.GetComponent<AudioManager>().PlayAudio(_gameOverSound, false);
          gameHasEnded = true;
          Debug.Log("GAME OVER");
+         _gameOver.SetActive(true);
          Invoke("Restart", restartDelay);
       }
       
@@ -65,11 +76,37 @@ public class GameManager : MonoBehaviour
    {
       SceneManager.LoadScene(SceneManager.GetActiveScene().name);
    }
+
+   public void StartGame()
+   {
+      StartCoroutine(LoadYourAsyncScene());
+   }
+
+   IEnumerator LoadYourAsyncScene()
+   {
+      // The Application loads the Scene in the background as the current Scene runs.
+      // This is particularly good for creating loading screens.
+      // You could also load the Scene by using sceneBuildIndex. In this case Scene2 has
+      // a sceneBuildIndex of 1 as shown in Build Settings.
+
+      AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("MainScene");
+
+      // Wait until the asynchronous scene fully loads
+      while (!asyncLoad.isDone)
+      {
+         yield return null;
+      }
+      GameObject UI = GameObject.FindGameObjectWithTag("UI");
+      GameObject gameOver = Instantiate(_gameOver, UI.transform);
+      gameOver.transform.SetParent(UI.transform);
+      _gameOver = gameOver;
+   }
    
   
 }
 public enum GameState 
 {
+   MainMenu,
    StartGame,
    Play,
    Victory,

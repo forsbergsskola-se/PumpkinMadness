@@ -3,31 +3,28 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] private GameObject GameStartPanel, _exitButton;
-    [SerializeField] private TextMeshProUGUI _stateText;
-
-    private void Awake()
-    {
-        GameManager.OneGameStateChanged += GameManagerOnGameStateChanged;
-    }
-
-    private void OnDestroy()
-    {
-        GameManager.OneGameStateChanged -= GameManagerOnGameStateChanged;
-    }
-
-    private void GameManagerOnGameStateChanged(GameState state)
-    {
-        GameStartPanel.SetActive(state == GameState.StartGame);
-    }
-
+    
+    private GameManager _gameManager;
+    
+    
     void Start()
     {
-        
+        _gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        _gameManager.UpdateGameState(GameState.MainMenu);
     }
 
-   
+    public void StartGame()
+    {
+        _gameManager.StartGame();
+    }
+
+    public void EndGame()
+    {
+        Application.Quit();
+    }
+    
 }

@@ -20,10 +20,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private AudioClip _playerMoveSound;
 
-   
-    
 
-    
+
 
     private void Awake()
     {
@@ -50,10 +48,13 @@ public class PlayerMovement : MonoBehaviour
             RotateTowardMovementVector(movementVector);
             GameObject Audio = GameObject.FindGameObjectWithTag("Audio");
             Audio.GetComponent<AudioManager>().PlayAudio(_playerMoveSound, false);
+
+            
         }
         else
         {
             RotateTowardsMouseVector();
+
         }
         RotateTowardMovementVector(movementVector);
 

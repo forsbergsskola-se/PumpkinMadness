@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PumpkinScript : MonoBehaviour
 {
+    [SerializeField] private AudioClip _pumpkinSmashSound;
     bool inside = false;
     bool startTime = false;    
     public int scoreValue;    
@@ -26,6 +27,8 @@ public class PumpkinScript : MonoBehaviour
             IEnumerator pumpkinTimer()
             {                
                 yield return new WaitForSeconds(1);
+                GameObject Audio = GameObject.FindGameObjectWithTag("Audio");
+                Audio.GetComponent<AudioManager>().PlayAudio(_pumpkinSmashSound, false);
                 ScoreScript.scoreValue = scoreValue + 1;                
                 Destroy(gameObject);
             }

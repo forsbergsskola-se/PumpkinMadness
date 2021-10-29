@@ -73,6 +73,31 @@ public class GameManager : MonoBehaviour
    {
       SceneManager.LoadScene(SceneManager.GetActiveScene().name);
    }
+
+   public void StartGame()
+   {
+      StartCoroutine(LoadYourAsyncScene());
+   }
+
+   IEnumerator LoadYourAsyncScene()
+   {
+      // The Application loads the Scene in the background as the current Scene runs.
+      // This is particularly good for creating loading screens.
+      // You could also load the Scene by using sceneBuildIndex. In this case Scene2 has
+      // a sceneBuildIndex of 1 as shown in Build Settings.
+
+      AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("MainScene");
+
+      // Wait until the asynchronous scene fully loads
+      while (!asyncLoad.isDone)
+      {
+         yield return null;
+      }
+      GameObject UI = GameObject.FindGameObjectWithTag("UI");
+      GameObject gameOver = Instantiate(_gameOver, UI.transform);
+      gameOver.transform.SetParent(UI.transform);
+      _gameOver = gameOver;
+   }
    
   
 }

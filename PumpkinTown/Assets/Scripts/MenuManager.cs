@@ -10,7 +10,7 @@ public class MenuManager : MonoBehaviour
     
     private GameManager _gameManager;
     
-
+    
     void Start()
     {
         _gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
@@ -19,7 +19,7 @@ public class MenuManager : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+        _gameManager.StartGame();
     }
     
 }

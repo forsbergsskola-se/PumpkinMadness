@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1036010813787718877}
   - component: {fileID: 1036010813787718878}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: GameManager 1
   m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,3 +46,4 @@ MonoBehaviour:
   restartDelay: 2
   State: 0
   _gameOver: {fileID: 0}
+  _gameOverSound: {fileID: 8300000, guid: ee72b3806b1934299a9bc9c612cfff4a, type: 3}

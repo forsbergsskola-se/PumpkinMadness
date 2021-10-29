@@ -43,3 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 878e6216c55bf1341b0c2c14c6700254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  restartDelay: 2
+  State: 0
+  _gameOver: {fileID: 0}
+  _gameOverSound: {fileID: 8300000, guid: ee72b3806b1934299a9bc9c612cfff4a, type: 3}

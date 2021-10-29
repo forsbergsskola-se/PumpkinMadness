@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pumpkin
   - Floor
+  - Enemy
   layers:
   - Default
   - TransparentFX

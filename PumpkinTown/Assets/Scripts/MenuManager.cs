@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] private GameObject _gameStartPanel, _exitButton;
+    [SerializeField] private GameObject GameStartPanel, _exitButton;
     [SerializeField] private TextMeshProUGUI _stateText;
 
     private void Awake()
@@ -21,7 +21,7 @@ public class MenuManager : MonoBehaviour
 
     private void GameManagerOnGameStateChanged(GameState state)
     {
-        _gameStartPanel.SetActive(state == GameState.StartGame);
+        GameStartPanel.SetActive(state == GameState.StartGame);
     }
 
     void Start()

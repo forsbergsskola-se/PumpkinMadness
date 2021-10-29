@@ -93,6 +93,10 @@ GameObject:
   - component: {fileID: 2761933863930444901}
   - component: {fileID: 5476125685437565042}
   - component: {fileID: 5476125685437565043}
+  - component: {fileID: 2817157260094091391}
+  - component: {fileID: 7925894187167276793}
+  - component: {fileID: 4820948440685179643}
+  - component: {fileID: 7572154649070907077}
   m_Layer: 0
   m_Name: Pumpkin
   m_TagString: Untagged
@@ -129,7 +133,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.8
   m_Center: {x: 0, y: -0.25, z: 0}
 --- !u!114 &5476125685437565043
 MonoBehaviour:
@@ -143,6 +147,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754260d7ec68f4385a9a20ee30ebe08a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreValue: 0
+--- !u!65 &2817157260094091391
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251472057057306335}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.31303978, y: 1, z: 1}
+  m_Center: {x: 0.7866068, y: 0, z: 0}
+--- !u!65 &7925894187167276793
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251472057057306335}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.22499084}
+  m_Center: {x: 0, y: 0, z: -0.52975845}
+--- !u!65 &4820948440685179643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251472057057306335}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.28903198, y: 1, z: 1}
+  m_Center: {x: -0.6659756, y: 0, z: 0}
+--- !u!65 &7572154649070907077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251472057057306335}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.26010895}
+  m_Center: {x: 0, y: 0, z: 0.5960312}
 --- !u!1 &5410643249850584845
 GameObject:
   m_ObjectHideFlags: 0

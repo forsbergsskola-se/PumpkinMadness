@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        if (gameManager.State == GameState.Play)
+        if (gameManager.State == GameState.StartGame)
         {
             if (timeValue > 0)
             {

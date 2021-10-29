@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
    private void Awake()
    {
       Instance = this;
+      DontDestroyOnLoad(this.gameObject);
    }
 
    private void Start()
@@ -32,6 +33,8 @@ public class GameManager : MonoBehaviour
 
       switch (newState)
       {
+         case GameState.MainMenu:
+            break;
          case GameState.StartGame:
             _gameOver.SetActive(false);
             HandleGameStart();
@@ -75,6 +78,7 @@ public class GameManager : MonoBehaviour
 }
 public enum GameState 
 {
+   MainMenu,
    StartGame,
    Play,
    Victory,

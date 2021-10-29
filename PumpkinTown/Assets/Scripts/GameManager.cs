@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-   void GameOver()
+   public void GameOver()
    {
       Debug.Log("GAME OVER");
    }

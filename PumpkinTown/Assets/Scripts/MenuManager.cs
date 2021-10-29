@@ -21,5 +21,10 @@ public class MenuManager : MonoBehaviour
     {
         _gameManager.StartGame();
     }
+
+    public void EndGame()
+    {
+        Application.Quit();
+    }
     
 }

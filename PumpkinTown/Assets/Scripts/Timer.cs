@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,18 +9,29 @@ public class Timer : MonoBehaviour
 
     public float timeValue = 90;
     public Text timeText;
-   
+    private GameManager _gameManager;
+
+    private void Start()
+    {
+        _gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+    }
+
     void Update()
     {
-        if (timeValue > 0)
+        if (_gameManager.State == GameState.StartGame)
         {
-            timeValue -= Time.deltaTime;
+            if (timeValue > 0)
+            {
+                timeValue -= Time.deltaTime;
+            }
+            else
+            {
+                timeValue = 0;
+                //Invoke Game Over
+                _gameManager.GameOver();
+            }
         }
-        else
-        {
-            timeValue = 0;
-            //Invoke Game Over
-        }
+        
         DisplayTime(timeValue);
     }
 

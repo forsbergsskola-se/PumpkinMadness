@@ -15,7 +15,7 @@ public class CameraMove : MonoBehaviour
             GameObject.Find("EnemyCollider3").transform.position = transform.position + new Vector3(-50, 0, 0);
             GameObject.Find("EnemyCollider4").transform.position = transform.position + new Vector3(-50, 0, 0);
             GameObject.Find("EnemyCollider5").transform.position = transform.position + new Vector3(-50, 0, 0);
-            startTime = true;
-        }        
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>().UpdateGameState(GameState.StartGame);
+        }
     }
 }

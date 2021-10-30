@@ -10,8 +10,9 @@ public class GameManager : MonoBehaviour
    public float restartDelay = 2f;
    public GameState State;
 
-   [SerializeField] GameObject _gameOver;
+    GameObject _gameOver;
    [SerializeField] private AudioClip _gameOverSound;
+   [SerializeField] private GameObject GameOverPrefab;
    public static event Action<GameState> OneGameStateChanged; 
 
    private bool gameHasEnded = false;
@@ -74,7 +75,8 @@ public class GameManager : MonoBehaviour
 
    void Restart()
    {
-      SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+      StartCoroutine(LoadYourAsyncScene());
+      gameHasEnded = false;
    }
 
    public void StartGame()
@@ -96,8 +98,13 @@ public class GameManager : MonoBehaviour
       {
          yield return null;
       }
+      InitializeGame();
+   }
+
+   void InitializeGame()
+   {
       GameObject UI = GameObject.FindGameObjectWithTag("UI");
-      GameObject gameOver = Instantiate(_gameOver, UI.transform);
+      GameObject gameOver = Instantiate(GameOverPrefab, UI.transform);
       gameOver.transform.SetParent(UI.transform);
       _gameOver = gameOver;
    }

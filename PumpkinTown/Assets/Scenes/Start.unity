@@ -10474,6 +10474,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1036010813787718878, guid: 4f3290f113b007148986c543f88925d3, type: 3}
+      propertyPath: GameOverPrefab
+      value: 
+      objectReference: {fileID: 3007330069001236498, guid: d0d82dcf472af254db2abe1d1b569ce9, type: 3}
     - target: {fileID: 1036010813787718879, guid: 4f3290f113b007148986c543f88925d3, type: 3}
       propertyPath: m_Name
       value: 'GameManager '
@@ -10724,7 +10728,7 @@ GameObject:
   - component: {fileID: 1636960891}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

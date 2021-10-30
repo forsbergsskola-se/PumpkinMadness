@@ -29,7 +29,7 @@ public class PumpkinScript : MonoBehaviour
                 yield return new WaitForSeconds(1);
                 GameObject Audio = GameObject.FindGameObjectWithTag("Audio");
                 Audio.GetComponent<AudioManager>().PlayAudio(_pumpkinSmashSound, false);
-                ScoreScript.scoreValue = scoreValue + 1;                
+                ScoreScript.scoreValue++;                
                 Destroy(gameObject);
             }
         }

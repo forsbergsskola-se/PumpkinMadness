@@ -380,7 +380,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &46521271 stripped
 Transform:
@@ -1212,7 +1213,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &118292946 stripped
 Transform:
@@ -1348,7 +1350,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (29)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &140181434 stripped
 Transform:
@@ -2195,7 +2198,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (26)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &266297116 stripped
 Transform:
@@ -3019,7 +3023,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (25)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &352027135 stripped
 Transform:
@@ -3642,7 +3647,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (27)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &476119703 stripped
 Transform:
@@ -4074,7 +4080,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &523974163 stripped
 Transform:
@@ -4376,7 +4383,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (23)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &586246449 stripped
 Transform:
@@ -4438,7 +4446,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (17)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &599609908 stripped
 Transform:
@@ -4500,7 +4509,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (31)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &601043212 stripped
 Transform:
@@ -4829,7 +4839,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (38)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &641697335 stripped
 Transform:
@@ -4922,7 +4933,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &656536631 stripped
 Transform:
@@ -5058,7 +5070,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &674535435 stripped
 Transform:
@@ -5120,7 +5133,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (34)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &687004436 stripped
 Transform:
@@ -5291,7 +5305,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (40)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &708048915 stripped
 Transform:
@@ -5510,7 +5525,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (28)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &789726127 stripped
 Transform:
@@ -6301,7 +6317,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (24)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &951276600 stripped
 Transform:
@@ -6722,7 +6739,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (30)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1047856256 stripped
 Transform:
@@ -6858,7 +6876,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (22)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1108005745 stripped
 Transform:
@@ -10357,7 +10376,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (33)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1248791478 stripped
 Transform:
@@ -10463,7 +10483,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1253260086 stripped
 Transform:
@@ -10525,7 +10546,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (20)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1272951753 stripped
 Transform:
@@ -11234,7 +11256,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (39)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1331424713 stripped
 Transform:
@@ -11562,7 +11585,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (18)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1389749445 stripped
 Transform:
@@ -11672,7 +11696,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (35)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1395131082 stripped
 Transform:
@@ -11840,7 +11865,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1471858931 stripped
 Transform:
@@ -11902,7 +11928,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1481256083 stripped
 Transform:
@@ -12215,7 +12242,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (32)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1543196611 stripped
 Transform:
@@ -12638,7 +12666,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1637703388 stripped
 Transform:
@@ -12740,7 +12769,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1670490863 stripped
 Transform:
@@ -12802,7 +12832,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (41)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1683529883 stripped
 Transform:
@@ -13582,7 +13613,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (19)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1755592598 stripped
 Transform:
@@ -14017,7 +14049,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1844619372 stripped
 Transform:
@@ -14079,7 +14112,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (37)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1845700827 stripped
 Transform:
@@ -14141,7 +14175,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (21)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1851560231 stripped
 Transform:
@@ -14277,7 +14312,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (36)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1871449094 stripped
 Transform:
@@ -15129,7 +15165,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &1954304378 stripped
 Transform:
@@ -15605,7 +15642,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &2002057020 stripped
 Transform:
@@ -15667,7 +15705,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &2017189053 stripped
 Transform:
@@ -15803,7 +15842,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &2032947150 stripped
 Transform:
@@ -16604,7 +16644,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!4 &2145318249 stripped
 Transform:
@@ -17146,7 +17187,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWPumpkin
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8704513392096891375, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b37e10839b2f4483bbe276af9cbdff53, type: 3}
 --- !u!33 &4172822313368752482
 MeshFilter:
@@ -18566,7 +18608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7643940342534342673, guid: 8daedb28f10a500478cb216593f8cce5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7643940342534342673, guid: 8daedb28f10a500478cb216593f8cce5, type: 3}
       propertyPath: m_TagString

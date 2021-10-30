@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraMove : MonoBehaviour
-{       
+{
+    public static bool startTime = false;
     public void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
@@ -14,6 +15,7 @@ public class CameraMove : MonoBehaviour
             GameObject.Find("EnemyCollider3").transform.position = transform.position + new Vector3(-50, 0, 0);
             GameObject.Find("EnemyCollider4").transform.position = transform.position + new Vector3(-50, 0, 0);
             GameObject.Find("EnemyCollider5").transform.position = transform.position + new Vector3(-50, 0, 0);
+            startTime = true;
         }        
     }
 }

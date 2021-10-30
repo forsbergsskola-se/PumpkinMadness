@@ -11639,7 +11639,7 @@ MonoBehaviour:
   sharedProfile: {fileID: 11400000, guid: 1963816ea5c4b664abd83ede4c37cf94, type: 2}
   isGlobal: 1
   blendDistance: 0
-  weight: 1
+  weight: 0.85
   priority: 0
 --- !u!1001 &1395131081
 PrefabInstance:
@@ -21120,8 +21120,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6771396172726521367}
-  m_LocalRotation: {x: -0, y: -0, z: 0.66430986, w: 0.7474573}
-  m_LocalPosition: {x: -19.247, y: -8.878, z: 29.177}
+  m_LocalRotation: {x: -0, y: -0, z: 0.699022, w: 0.7151002}
+  m_LocalPosition: {x: -19.2861, y: -9.0167885, z: 29.177}
   m_LocalScale: {x: 0.14644042, y: 0.21473388, z: 0.16962501}
   m_Children:
   - {fileID: 7607212581485849323}
@@ -21170,7 +21170,7 @@ Transform:
   - {fileID: 2588362851705568635}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 83.259}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 88.697}
 --- !u!23 &6287030142937219473
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21602,8 +21602,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &6771396172726521368
-CapsuleCollider:
+--- !u!65 &6771396172726521368
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21612,10 +21612,9 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 3.0616992
-  m_Height: 6.5623665
-  m_Direction: 1
-  m_Center: {x: -2.707819, y: -0.000000005296596, z: 0.2239894}
+  serializedVersion: 2
+  m_Size: {x: 6.286448, y: 6.9448185, z: 4.7740693}
+  m_Center: {x: -2.8684206, y: 0.019022746, z: 0.07134215}
 --- !u!4 &6806311925841302425
 Transform:
   m_ObjectHideFlags: 0
@@ -23196,7 +23195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7643940342534342673, guid: 8daedb28f10a500478cb216593f8cce5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7643940342534342673, guid: 8daedb28f10a500478cb216593f8cce5, type: 3}
       propertyPath: m_TagString
